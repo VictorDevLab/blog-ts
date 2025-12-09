@@ -1,8 +1,9 @@
+import Navbar from "./_components/Navbar";
 
 export default function Home() {
   return (
     <div className="">
-        <p>Hello world</p>
+        <Navbar />
     </div>
   );
 }
