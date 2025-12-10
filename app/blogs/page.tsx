@@ -1,6 +1,7 @@
 import Category from "../_components/Category";
 import Hero from "../_components/Hero";
 import Navbar from "../_components/Navbar";
+import Link from "next/link";
 
 function page() {
   const blogs = [
@@ -54,7 +55,8 @@ function page() {
       <Category />
       <div className="mt-16 grid md:grid-cols-3 sm:grid-cols-1 gap-1">
         {blogs.map((blog) => (
-          <div
+          <Link
+            href={`/blogs/${blog.id}`}
             key={blog.id}
             className="bg-white overflow-hidden border-1 border-amber-700 hover:translate-y-[-8px] transition-transform cursor-pointer"
           >
@@ -69,7 +71,7 @@ function page() {
               <h2 className="text-xl font-bold mb-2">{blog.title}</h2>
               <p className="text-gray-600">{blog.summary}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
