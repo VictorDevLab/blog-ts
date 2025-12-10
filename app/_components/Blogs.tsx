@@ -15,7 +15,7 @@ function Blogs({ blogs }: BlogsProps) {
         <>
             <div className="mt-16 grid md:grid-cols-3 sm:grid-cols-1 gap-1">{
                 blogs.map((blog) => (
-                    <Link href={`/blogs/${blog.id}`} key={blog.id} className="bg-white overflow-hidden border-1 border-amber-700 hover:translate-y-[-8px] transition-transform cursor-pointer">
+                    <Link href={`/blogs/${blog.id}`} key={blog.id} className="bg-[#DFDCD0] overflow-hidden border-1 border-amber-700 hover:translate-y-[-8px] transition-transform cursor-pointer">
                         {blog.imageUrl && (
                             <img src={blog.imageUrl} alt={blog.title} className="w-full h-48 object-cover" />
                         )}
