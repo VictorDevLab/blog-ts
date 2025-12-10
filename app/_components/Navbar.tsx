@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="flex justify-between align-center py-6">
       <div>
-        <p className="text-2xl">Blog</p>
+        <Link href="/" className="text-2xl">Blog</Link>
       </div>
       <div className="flex justify-center items-center">
         <ul className="flex align-middle gap-6">
