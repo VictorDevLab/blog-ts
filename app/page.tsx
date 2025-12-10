@@ -13,7 +13,7 @@ export default function Home() {
     { id: 6, title: "Third Blog Post", summary: "This is the summary of the third blog post.", imageUrl: "https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=500&h=300&fit=crop" },
 ];
   return (
-    <div className="px-6 md:px-12 bg-[#DFDCD0]">
+    <div className="">
         <Navbar />
         <Hero />
         <Category />
